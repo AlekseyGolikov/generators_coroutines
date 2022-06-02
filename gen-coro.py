@@ -42,7 +42,6 @@ def copy():
             print(n)
             with Coro(coroutine, n) as coro:
                 coro.send(n)
-
             sleep(1)
         except StopIteration:
             print('Запись окончена!')
